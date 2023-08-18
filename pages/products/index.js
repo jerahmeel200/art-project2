@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation";
 
 import Hero from "./Hero";
 
-function index() {
+function Index() {
   const router = useRouter();
   const itemsPerPage = 16; // Number of items to display per page
   const [currentPage, setCurrentPage] = useState(1);
@@ -107,4 +107,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
