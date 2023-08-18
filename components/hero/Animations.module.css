@@ -1,0 +1,28 @@
+Animations.module.css
+/* Animations.module.css */
+
+.zoom-in {
+  animation: zoomIn 4s ease-in-out;
+}
+
+.zoom-out {
+  animation: zoomOut 4s ease-in-out;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}

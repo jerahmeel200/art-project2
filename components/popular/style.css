@@ -1,0 +1,27 @@
+.carousel {
+  padding: 5rem;
+  /* background-color: gray; */
+}
+.box {
+}
+.slick-slide div {
+  margin: 0 1rem;
+}
+
+/* .slick-arrow {
+  background-color: red !important;
+} */
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px !important;
+  color: black !important;
+}
+
+/* Add hover effect to arrows */
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: gray !important;
+}
+.star {
+  padding-left: 20px !important;
+}

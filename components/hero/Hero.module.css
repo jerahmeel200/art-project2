@@ -1,0 +1,61 @@
+/* Hero.module.css */
+.videoContainer {
+  /* background-color: red; */
+  /* padding: 20px; */
+  overflow: hidden;
+}
+
+.placeholderImageWrapper {
+  position: relative;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 80vh; /* Adjust the height as needed */
+  overflow: hidden;
+  /* border-radius: 10px; */
+  /* margin-bottom: 20px; */
+  background-repeat: no-repeat;
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  /* border-radius: 10px; */
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.images.active {
+  opacity: 1;
+}
+.randomTextContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 20px;
+  border-radius: 5px;
+
+  text-align: center;
+}
+
+.randomTextContainer h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+@media only screen and (max-width: 990px) {
+  .imageContainer {
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .imageContainer {
+    height: 40vh;
+  }
+}

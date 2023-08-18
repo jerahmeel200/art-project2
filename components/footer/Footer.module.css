@@ -1,0 +1,121 @@
+.container {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: -1; */
+  /* background: black; */
+
+  /* position: fixed;
+
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+
+  padding: 8px 10px;
+  bottom: 0; */
+  /* position: fixed; */
+  /* bottom: 0; */
+  color: white;
+  /* margin: auto;
+  width: 100%; */
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+
+  margin: 50px;
+  /* text-align: center; */
+  /* flex-wrap: wrap; */
+}
+.footerMenu {
+  display: flex;
+  flex-direction: column;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.info h3 {
+  margin-bottom: 10px;
+}
+.emailUs h3 {
+  margin-bottom: 10px;
+}
+.emailUs span {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 300;
+}
+.footerMenuCont h3 {
+  margin-bottom: 10px;
+}
+.emailUs {
+  display: flex;
+  flex-direction: column;
+}
+.socialIcons {
+  margin-right: 1px;
+  cursor: pointer;
+  display: flex;
+}
+.mobileWrapper {
+  display: none;
+}
+.MobileContacts {
+  border-bottom: 1px solid white;
+  /* margin-bottom: 10px; */
+  padding: 20px 0;
+}
+.popCont {
+  border-bottom: 1px solid lightgray;
+  /* margin-bottom: 10px; */
+  padding: 20px 0;
+}
+.contactLinks span {
+  float: right;
+}
+.popTitle span {
+  float: right;
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid white;
+  margin-top: 10px;
+}
+.mailIcon {
+  margin-right: 5px;
+  color: #555;
+  cursor: pointer;
+}
+.inputs {
+  flex: 1;
+  border: none;
+  outline: none; /* Remove input outline */
+  /* padding: 5px; */
+  background-color: transparent;
+  padding: 5px;
+}
+@media screen and (max-width: 770px) {
+  .mobileWrapper {
+    display: block;
+    padding: 20px 20px;
+    min-height: 60px;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .wrapper {
+    display: none;
+  }
+}

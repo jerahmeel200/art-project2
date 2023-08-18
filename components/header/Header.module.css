@@ -1,0 +1,111 @@
+.container {
+  padding: 20px;
+  /* z-index: 1000; */
+  background-color: rgba(46, 44, 44, 0.8);
+  box-sizing: border-box;
+  color: #fff;
+  height: 60px;
+  padding-left: 32px;
+  padding-right: 32px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+.wrapper {
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  flex: 1;
+}
+
+.linkList {
+  flex: 6;
+  display: flex;
+  justify-content: center;
+}
+
+.linkList a {
+  margin: 0 10px; /* Add margin between icons */
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0, 20px;
+  flex-wrap: wrap;
+}
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.left button {
+  margin: 0 10px; /* Add margin between icons */
+  font-size: 18px;
+  cursor: pointer;
+}
+.mySvg {
+  width: 1.5rem;
+  height: 1.5rem;
+  /* fill: red !important; */
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(291deg)
+    brightness(102%) contrast(103%);
+  /* background-color: aqua; */
+}
+.links {
+  color: #fff;
+}
+.menu {
+  display: none;
+}
+.mobileContainer {
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  .mobileContainer {
+    display: block;
+    transition: width 1.3s ease-in-out;
+  }
+  .navMobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    /* background: rgb(230, 230, 230); */
+    z-index: 9999;
+    flex-direction: column;
+    transition: width 0.3s ease-in-out;
+    transform: translateX(0);
+    display: flex;
+    flex-direction: column;
+  }
+  .linkList {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .mobileLinkCont {
+    display: flex;
+    margin-left: 20px;
+    /* border-bottom: 1px solid gray; */
+    flex-direction: column;
+  }
+
+  .mobileLinks {
+    border-bottom: 1px solid rgb(201, 193, 193);
+    padding: 20px;
+  }
+  .socials {
+    display: flex;
+    margin-top: 20px;
+  }
+  .socialsIcons {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
