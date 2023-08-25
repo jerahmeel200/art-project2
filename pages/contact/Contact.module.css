@@ -1,0 +1,33 @@
+.container {
+  padding-top: 70px;
+  background-color: green;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  background-color: red;
+}
+.formContainer {
+  background-color: blue;
+}
+
+.inputContainer {
+  display: flex;
+}
+.inputs input {
+  display: flex;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 48%; /* Adjust the width as needed */
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 2%; /* Adjust the spacing between inputs */
+}
+.inputs label {
+  display: block; /* This ensures labels are on their own line */
+  margin-bottom: 5px; /* Adds spacing between labels and inputs */
+  font-weight: bold;
+}
