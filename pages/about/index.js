@@ -79,7 +79,7 @@ function index() {
             Desire’s Work Offers Inspiration, Interest And Thought. From Here
             Onwards He Will Continue To Invite The Audience On To A Trip Through
             His Artwork, Photographs And Designs, For Those Who Join Prepare To
-            Encounter A Thrilling Journey
+            Encounter A Thrilling Journey.
           </p>
         </div>
 
