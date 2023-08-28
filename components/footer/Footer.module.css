@@ -1,7 +1,7 @@
 .container {
   background-color: black;
   padding: 10px;
-  text-align: center;
+  /* text-align: center; */
   /* position: fixed; */
   bottom: 0;
   left: 0;
@@ -44,9 +44,23 @@
 }
 .info h3 {
   margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.info span {
+  margin-bottom: 7px;
+  font-size: 12px;
+  font-weight: 500;
 }
 .emailUs h3 {
   margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.emailUs p {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 200;
 }
 .emailUs span {
   margin-bottom: 5px;
@@ -55,6 +69,18 @@
 }
 .footerMenuCont h3 {
   margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.footerMenuCont {
+  display: flex;
+  flex-direction: column;
+}
+.footerMenuCont h4 {
+  /* color: red; */
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 7px;
 }
 .emailUs {
   display: flex;
@@ -62,8 +88,16 @@
 }
 .socialIcons {
   margin-right: 1px;
+  justify-content: space-between;
   cursor: pointer;
   display: flex;
+}
+.socialsIcons {
+  margin-right: 5px;
+  justify-content: space-between;
+  cursor: pointer;
+  display: flex;
+  /* background-color: red; */
 }
 .mobileWrapper {
   display: none;
@@ -89,12 +123,16 @@
   align-items: center;
   background-color: black;
   border-radius: 5px;
-  padding: 5px;
+  padding: 1px;
   border: 1px solid white;
   margin-top: 10px;
 }
+.inputContainer input {
+  font-size: 10px;
+  font-weight: 500;
+}
 .mailIcon {
-  margin-right: 5px;
+  margin-left: 4px;
   color: #555;
   cursor: pointer;
 }

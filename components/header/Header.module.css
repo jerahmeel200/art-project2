@@ -1,20 +1,14 @@
 .container {
   padding: 20px;
-  /* z-index: 1000; */
-  /* background-color: rgba(46, 44, 44, 0.1); */
+
   box-sizing: border-box;
-  color: #fff;
+
   height: 60px;
-  /* padding-left: 32px;
-  padding-right: 32px; */
-  border: none;
-  opacity: 5;
-  position: absolute;
-  /* top: 0; */
+
   width: 100%;
-  z-index: 6;
 }
 .wrapper {
+  position: relative;
   /* background-color: green; */
   display: flex;
   justify-content: space-between;

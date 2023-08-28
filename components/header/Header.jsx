@@ -22,7 +22,7 @@ function Header() {
 
   // Define header style based on the current route
   const headerStyle = {
-    backgroundColor: router.pathname === "/" ? "none" : "white",
+    backgroundColor: router.pathname === "/" ? "gray" : "white",
     color: router.pathname === "/" ? "gray" : "black",
   };
 
@@ -41,7 +41,7 @@ function Header() {
         <div className="main">
           <div className={styles.wrapper}>
             <div className={styles.logo}>
-              <h1>LOGO</h1>
+              <h1 style={headerLogo}>LOGO</h1>
             </div>
             <div className={styles.linkList}>
               {navLinks.map((item, index) => (

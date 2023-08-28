@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 
 import styles from "./Footer.module.css";
@@ -64,102 +63,114 @@ function Footer() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.wrapper}>
-        <div className={styles.socialIcons}>
-          <Facebook size={35} color="gray" className={styles.socialsIcons} />
-          <Instagram size={35} color="gray" className={styles.socialsIcons} />
-          <Twitter size={35} color="gray" className={styles.socialsIcons} />
-          <Youtube size={35} color="gray" className={styles.socialsIcons} />
-          <Facebook size={35} color="gray" className={styles.socialsIcons} />
-        </div>
-        <div className={styles.footerMenuCont}>
-          <h3>MAIN MENU</h3>
-          {navLinks.map((item) => (
-            <Link className={styles.footerMenu} key={item.id} href={item.link}>
-              {item.title}
-            </Link>
-          ))}
-        </div>
-        <div className={styles.info}>
-          <h3>INFORMATION</h3>
-          <span>Shipping Policy</span>
-          <span>Shipping Policy</span>
-          <span>Shipping Policy</span>
-          <span>Shipping Policy</span>
-          <span>Shipping Policy</span>
-          <span>Shipping Policy</span>
-          <span>Shipping Policy</span>
-        </div>
-        <div className={styles.emailUs}>
-          <h3>EMAIL US</h3>
-
-          <div className={styles.inputContainer}>
-            <Mail color="white" className={styles.mailIcon} />
-            <input type="text" className={styles.inputs} />
+      <div className="main">
+        <div className={styles.wrapper}>
+          <div className={styles.socialIcons}>
+            <Facebook size={25} color="gray" className={styles.socialsIcons} />
+            <Instagram size={25} color="gray" className={styles.socialsIcons} />
+            <Twitter size={25} color="gray" className={styles.socialsIcons} />
+            <Youtube size={25} color="gray" className={styles.socialsIcons} />
+            <Facebook size={25} color="gray" className={styles.socialsIcons} />
+          </div>
+          <div className={styles.footerMenuCont}>
+            <h3>MAIN MENU</h3>
+            {navLinks.map((item) => (
+              <Link
+                className={styles.footerMenu}
+                key={item.id}
+                href={item.link}
+              >
+                <h4> {item.title} </h4>
+              </Link>
+            ))}
+          </div>
+          <div className={styles.info}>
+            <h3>INFORMATION</h3>
+            <span>Who we are </span>
+            <span>Contact Us</span>
+            <span>Privacy Policy</span>
+            <span>Shipping Policy</span>
+            <span>Refund Policy</span>
+            <span>Terms of Service</span>
+          </div>
+          <div className={styles.emailUs}>
+            <h3>EMAIL US</h3>
+            <p>
+              Subscribe to get special offers, free giveaways, and
+              once-in-a-lifetime deals
+            </p>
+            <div className={styles.inputContainer}>
+              <Mail color="white" className={styles.mailIcon} />
+              <input
+                type="text"
+                className={styles.inputs}
+                placeholder="enter your email.."
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <div className={styles.mobileWrapper}>
-        <div className={styles.popCont}>
-          {popularLinks.map((item) => (
-            <div key={item?.id}>
-              <div
-                className={styles.popTitle}
-                onClick={() => toggleAccordion(item?.id)}
-              >
-                {item?.title}
-                {activeAccordion ? (
-                  <span>
-                    <ChevronDown />
-                  </span>
-                ) : (
-                  <span>
-                    <ChevronUp />
-                  </span>
+        <div className={styles.mobileWrapper}>
+          <div className={styles.popCont}>
+            {popularLinks.map((item) => (
+              <div key={item?.id}>
+                <div
+                  className={styles.popTitle}
+                  onClick={() => toggleAccordion(item?.id)}
+                >
+                  {item?.title}
+                  {activeAccordion ? (
+                    <span>
+                      <ChevronDown />
+                    </span>
+                  ) : (
+                    <span>
+                      <ChevronUp />
+                    </span>
+                  )}
+                </div>
+                {activeAccordion === item.id && (
+                  <ul className="accordion-content">
+                    {item.content.map((link) => (
+                      <li key={link?.label}>
+                        <a href={link?.link}>{link.label}</a>
+                      </li>
+                    ))}
+                  </ul>
                 )}
               </div>
-              {activeAccordion === item.id && (
-                <ul className="accordion-content">
-                  {item.content.map((link) => (
-                    <li key={link?.label}>
-                      <a href={link?.link}>{link.label}</a>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        <div className={styles.MobileContacts}>
-          {contacts.map((item) => (
-            <div key={item?.id}>
-              <div
-                className={styles.contactLinks}
-                onClick={() => toggleAccordion2nd(item.id)}
-              >
-                {item?.title}{" "}
-                {activeAccordion2nd ? (
-                  <span>
-                    <ChevronDown />
-                  </span>
-                ) : (
-                  <span>
-                    <ChevronUp />
-                  </span>
+          <div className={styles.MobileContacts}>
+            {contacts.map((item) => (
+              <div key={item?.id}>
+                <div
+                  className={styles.contactLinks}
+                  onClick={() => toggleAccordion2nd(item.id)}
+                >
+                  {item?.title}{" "}
+                  {activeAccordion2nd ? (
+                    <span>
+                      <ChevronDown />
+                    </span>
+                  ) : (
+                    <span>
+                      <ChevronUp />
+                    </span>
+                  )}
+                </div>
+                {activeAccordion2nd === item.id && (
+                  <ul className="accordion-content">
+                    {item?.content?.map((link) => (
+                      <li key={link.label}>
+                        <a href={link.link}>{link.label}</a>
+                      </li>
+                    ))}
+                  </ul>
                 )}
               </div>
-              {activeAccordion2nd === item.id && (
-                <ul className="accordion-content">
-                  {item?.content?.map((link) => (
-                    <li key={link.label}>
-                      <a href={link.link}>{link.label}</a>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

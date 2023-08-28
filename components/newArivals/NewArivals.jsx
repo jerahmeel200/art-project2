@@ -24,8 +24,8 @@ function NewArivals() {
               <img
                 className={sliderData.id === i ? styles.clicked : ""}
                 key={item.id}
-                height="100"
-                width="70"
+                // height="100"
+                // width="70"
                 src={item.value}
                 alt="thumbnail"
                 onClick={() => handleImageClick(i)}
@@ -33,7 +33,7 @@ function NewArivals() {
             ))}
           </div>
           <div className={styles.displayContainer}>
-            <img src={sliderData[0].value} alt="large" width="350" />
+            <img src={sliderData[0].value} alt="large" />
           </div>
         </div>
         <div className={styles.right}>
