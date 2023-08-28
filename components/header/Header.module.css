@@ -1,16 +1,18 @@
 .container {
   padding: 20px;
   /* z-index: 1000; */
-  background-color: rgba(46, 44, 44, 0.8);
+  /* background-color: rgba(46, 44, 44, 0.1); */
   box-sizing: border-box;
   color: #fff;
   height: 60px;
-  padding-left: 32px;
-  padding-right: 32px;
-  position: fixed;
-  top: 0;
+  /* padding-left: 32px;
+  padding-right: 32px; */
+  border: none;
+  opacity: 5;
+  position: absolute;
+  /* top: 0; */
   width: 100%;
-  z-index: 3;
+  z-index: 6;
 }
 .wrapper {
   /* background-color: green; */
@@ -19,6 +21,9 @@
 }
 .logo {
   flex: 1;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .linkList {
@@ -29,10 +34,11 @@
 
 .linkList a {
   margin: 0 10px; /* Add margin between icons */
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
   padding: 0, 20px;
   flex-wrap: wrap;
+  font-weight: 500;
 }
 .left {
   flex: 1;
@@ -62,11 +68,15 @@
 .mobileContainer {
   display: none;
 }
-
+.left svg {
+  font-weight: 500;
+}
 @media screen and (max-width: 770px) {
   .mobileContainer {
     display: block;
     transition: width 1.3s ease-in-out;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .navMobile {
     position: absolute;
@@ -82,6 +92,7 @@
     transform: translateX(0);
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .linkList {
     display: none;
