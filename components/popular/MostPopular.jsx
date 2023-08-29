@@ -92,12 +92,13 @@ function MostPopular() {
           {popular.map((item, index) => (
             <div key={index} className={styles.box}>
               <img src={item.image} alt="product" />
-              <h4 className={styles.desc}>{item.desc}</h4>
-              <p>{item.description}</p>
-              <span className={styles.star}>
-                <StarRating rating={item.rating} className="my-10" />
-              </span>
-              <p className={styles.price}>{item.price}</p>
+              <div className={styles.details}>
+                <h4 className={styles.desc}>{item.desc}</h4>
+
+                <StarRating rating={item.rating} className={styles.star} />
+
+                <p className={styles.price}>{item.price}</p>
+              </div>
             </div>
           ))}
         </Slider>

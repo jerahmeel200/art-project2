@@ -5,7 +5,13 @@
   /* background-color: gray; */
 }
 .box {
-  padding-right: 20px;
+  padding-right: 40px;
+  height: 150px;
+  width: 50px;
+  /* padding-bottom: 10px; */
+}
+.box img {
+  width: 100%;
 }
 .star {
   padding-top: 5px;
@@ -15,13 +21,14 @@
 }
 .desc {
   padding-top: 5px;
+  padding-bottom: 5px;
 }
 .slick-slide div {
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
 }
 
 .price {
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 button.slick-arrow.slick-next:before {
   top: 70% !important;
@@ -53,9 +60,11 @@ button.slick-arrow.slick-next:before {
 .star {
   padding-left: 20px !important;
 }
-.box {
+
+.box img {
   /* padding-top: 20px; */
-  height: 300px;
+  height: 200px;
+  width: 100px;
 }
 .heading {
   display: flex;
@@ -73,4 +82,7 @@ button.slick-arrow.slick-next:before {
 }
 .slick-list {
   margin: 0 -10px;
+}
+.details {
+  margin-bottom: 10px;
 }

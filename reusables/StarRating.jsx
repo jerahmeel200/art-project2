@@ -22,7 +22,7 @@ const StarRating = ({ rating }) => {
     return starArray;
   };
 
-  return <span className="py-10 flex">{renderStars()}</span>;
+  return <span className="flex">{renderStars()}</span>;
 };
 
 export default StarRating;
