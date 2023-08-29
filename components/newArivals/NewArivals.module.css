@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  border-top: 1px solid lightgray;
+
   padding-top: 30px;
   padding-bottom: 30px;
   gap: 30px;
@@ -32,7 +32,9 @@
 .clicked {
   border: 2px solid black;
 }
-
+.borderTop {
+  border-bottom: 1px solid lightgray;
+}
 .displayContainer {
   text-align: center;
   margin-bottom: 20px;
@@ -89,6 +91,10 @@
   padding: 5px 5px;
   margin-right: 5px;
 }
+.star {
+  padding-left: 20px !important;
+}
+
 @media only screen and (max-width: 990px) {
   .container {
     flex-direction: column;

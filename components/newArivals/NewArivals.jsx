@@ -16,49 +16,51 @@ function NewArivals() {
   };
 
   return (
-    <div className="main">
-      <div className={styles.container}>
-        <div className={styles.left}>
-          <div className={styles.galleryContainer}>
-            {imgs.map((item, i) => (
-              <img
-                className={sliderData.id === i ? styles.clicked : ""}
-                key={item.id}
-                // height="100"
-                // width="70"
-                src={item.value}
-                alt="thumbnail"
-                onClick={() => handleImageClick(i)}
-              />
-            ))}
-          </div>
-          <div className={styles.displayContainer}>
-            <img src={sliderData[0].value} alt="large" />
-          </div>
-        </div>
-        <div className={styles.right}>
-          <div className={styles.desc}>
-            <h4>NEW ARIVAL</h4>
-            <h1>Smoke Break Barack Obama & MLK</h1>
-            <h5 className="text-1xl font-bold  ">$169.00</h5>
-          </div>
-
-          <div className={styles.details}>
-            <div className={styles.size}>
-              <p>SIZE</p>
-              <div>
-                <button>15X16</button>
-                <button>15X16</button>
-                <button>15X16</button>
-                <button>15X16</button>
-              </div>
+    <div className={styles.borderTop}>
+      <div className="main">
+        <div className={styles.container}>
+          <div className={styles.left}>
+            <div className={styles.galleryContainer}>
+              {imgs.map((item, i) => (
+                <img
+                  className={sliderData.id === i ? styles.clicked : ""}
+                  key={item.id}
+                  // height="100"
+                  // width="70"
+                  src={item.value}
+                  alt="thumbnail"
+                  onClick={() => handleImageClick(i)}
+                />
+              ))}
             </div>
-            <div className={styles.material}>
-              <p>MATERIAL</p>
-              <div>
-                <button>Canvas</button>
-                <button>Framed</button>
-                <button>Unframed</button>
+            <div className={styles.displayContainer}>
+              <img src={sliderData[0].value} alt="large" />
+            </div>
+          </div>
+          <div className={styles.right}>
+            <div className={styles.desc}>
+              <h4>NEW ARIVAL</h4>
+              <h1>Smoke Break Barack Obama & MLK</h1>
+              <h5 className="text-1xl font-bold  ">$169.00</h5>
+            </div>
+
+            <div className={styles.details}>
+              <div className={styles.size}>
+                <p>SIZE</p>
+                <div>
+                  <button>15X16</button>
+                  <button>15X16</button>
+                  <button>15X16</button>
+                  <button>15X16</button>
+                </div>
+              </div>
+              <div className={styles.material}>
+                <p>MATERIAL</p>
+                <div>
+                  <button>Canvas</button>
+                  <button>Framed</button>
+                  <button>Unframed</button>
+                </div>
               </div>
             </div>
           </div>

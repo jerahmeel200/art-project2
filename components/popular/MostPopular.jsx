@@ -47,35 +47,56 @@ function MostPopular() {
       id: 1,
       image: "/images/popImage1.webp",
       desc: "Freedom Family Tree ( Malcom X, MLK and Harriet Tubman)",
-      rating: 4.5,
+      rating: 5,
       price: "$99.9",
     },
     {
       id: 1,
       image: "/images/popImage2.avif",
       desc: "New York Subway",
-      rating: 4.5,
+      rating: 5,
       price: "$99.9",
     },
     {
       id: 1,
       image: "/images/popImage3.webp",
       desc: "THE LAST SUPPER",
-      rating: 4.5,
+      rating: 5,
       price: "$99.9",
     },
     {
       id: 1,
       image: "/images/popImage4.webp",
       desc: "AIR Kobe",
-      rating: 4.5,
+      rating: 5,
       price: "$99.9",
     },
     {
       id: 1,
       image: "/images/popImage5.webp",
       desc: "'BLACK IS KING' Beyoncé",
-      rating: 4.5,
+      rating: 5,
+      price: "$99.9",
+    },
+    {
+      id: 1,
+      image: "/images/popImage5.webp",
+      desc: "'BLACK IS KING' Beyoncé",
+      rating: 5,
+      price: "$99.9",
+    },
+    {
+      id: 1,
+      image: "/images/popImage5.webp",
+      desc: "'BLACK IS KING' Beyoncé",
+      rating: 5,
+      price: "$99.9",
+    },
+    {
+      id: 1,
+      image: "/images/popImage5.webp",
+      desc: "'BLACK IS KING' Beyoncé",
+      rating: 5,
       price: "$99.9",
     },
   ];
@@ -84,14 +105,36 @@ function MostPopular() {
     <div className="main">
       <div className={styles.carousel}>
         <div className={styles.heading}>
-          <h2 style={{ fontSize: "20px" }}>MOST POPULAR</h2>
-          <h1 style={{ fontSize: "30px" }}>Best Sellers</h1>
+          <h2
+            style={{
+              fontSize: "17px",
+              letterSpacing: ".2em",
+              paddingBottom: "10px",
+              fontWeight: "500",
+              color: "gray`",
+            }}
+          >
+            MOST POPULAR
+          </h2>
+          <h1
+            style={{
+              fontSize: "30px",
+              letterSpacing: "0.0em",
+              fontWeight: "400",
+              marginBottom: "20px",
+              paddingBottom: "10px",
+              fontSize: "25px",
+              borderBottom: "3px solid black",
+            }}
+          >
+            Best Sellers
+          </h1>
         </div>
 
         <Slider {...settings}>
           {popular.map((item, index) => (
             <div key={index} className={styles.box}>
-              <img src={item.image} alt="product" />
+              <img src={item.image} alt="product" className={styles.popImage} />
               <div className={styles.details}>
                 <h4 className={styles.desc}>{item.desc}</h4>
 
@@ -103,7 +146,7 @@ function MostPopular() {
           ))}
         </Slider>
         <div className="flex justify-center items-center pt-10">
-          <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          <button className="bg-black  text-white font-semibold py-2 px-4 border border-black   shadow">
             View all
           </button>
         </div>

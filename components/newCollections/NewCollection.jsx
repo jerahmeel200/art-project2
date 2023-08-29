@@ -1,5 +1,9 @@
 import React from "react";
 import styles from "./NewCollection.module.css";
+import StarRating from "../../reusables/StarRating";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const collections = [
   {
@@ -27,19 +31,25 @@ const collections = [
 
 function NewCollection() {
   return (
-    <div className="main">
-      <div className={styles.container}>
-        <div className={styles.items}>
-          {collections.map((item, index) => (
-            <div key={index}>
-              <img src={item.image} alt="" height="300" width="300" />
-              <p>{item.title}</p>
-              <span>{item.price}</span>
-            </div>
-          ))}
-        </div>
-        <div>
-          <button>View more</button>
+    <div style={{ borderTop: "1px solid lightgray", paddingTop: "50px" }}>
+      <div className="main">
+        <div className={styles.container}>
+          <div className={styles.heading}>
+            <h1>New limited Ts collection !</h1>
+          </div>
+          <div className={styles.cardHeader}>
+            {collections.map((item, index) => (
+              <div key={item.index} className={styles.items}>
+                <img src={item.image} alt="" />
+                <p>{item.title}</p>
+                <StarRating rating={item.rating} assName={styles.star} />
+                <span>{item.price}</span>
+              </div>
+            ))}
+          </div>
+          <div>
+            <button>View more</button>
+          </div>
         </div>
       </div>
     </div>
