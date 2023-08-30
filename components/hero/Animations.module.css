@@ -1,8 +1,5 @@
-Animations.module.css
-/* Animations.module.css */
-
 .zoom-in {
-  animation: zoomIn 4s ease-in-out;
+  animation: zoomIn 5s ease-in-out;
 }
 
 .zoom-out {
@@ -11,7 +8,7 @@ Animations.module.css
 
 @keyframes zoomIn {
   from {
-    transform: scale(2);
+    transform: scale(1);
   }
   to {
     transform: scale(1.1);
@@ -23,6 +20,6 @@ Animations.module.css
     transform: scale(1.1);
   }
   to {
-    transform: scale(1);
+    transform: scale(1); /* Changed this line to scale back to 1 */
   }
 }
