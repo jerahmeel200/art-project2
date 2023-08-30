@@ -81,7 +81,7 @@ button.slick-arrow.slick-next:before {
   flex-direction: column;
   line-height: 20px;
   align-items: center;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 .box img {
   width: 100%;

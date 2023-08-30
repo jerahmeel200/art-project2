@@ -19,6 +19,10 @@
   height: 100%;
   max-width: 500px;
   max-height: 300px;
+  margin-bottom: 15px;
+}
+.items img:hover {
+  transform: scale(1.1) !important;
 }
 .cardHeader {
   display: flex;
@@ -27,13 +31,20 @@
 }
 
 .cardHeader .items {
-  border: 1px solid #ddd;
   padding: 16px;
-  text-align: center;
+  /* text-align: center; */
   flex-basis: calc(33.33% - 20px); /* For 3 columns on desktop */
   margin-bottom: 20px;
 }
-
+.items p {
+  font-size: 15px;
+  font-weight: 500;
+  word-spacing: 0.5px;
+  padding-bottom: 7px;
+}
+.price {
+  padding-top: 7px;
+}
 @media (max-width: 768px) {
   .cardHeader .items {
     flex-basis: calc(50% - 20px); /* For 2 columns on medium screens */

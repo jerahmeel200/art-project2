@@ -31,7 +31,15 @@ const collections = [
 
 function NewCollection() {
   return (
-    <div style={{ borderTop: "1px solid lightgray", paddingTop: "50px" }}>
+    <div
+      style={{
+        borderTop: "1px solid lightgray",
+        paddingTop: "50px",
+        paddingBottom: "50px",
+        borderBottom: "1px solid lightgray",
+        marginBottom: "30px",
+      }}
+    >
       <div className="main">
         <div className={styles.container}>
           <div className={styles.heading}>
@@ -43,12 +51,14 @@ function NewCollection() {
                 <img src={item.image} alt="" />
                 <p>{item.title}</p>
                 <StarRating rating={item.rating} assName={styles.star} />
-                <span>{item.price}</span>
+                <span className={styles.price}>{item.price}</span>
               </div>
             ))}
           </div>
-          <div>
-            <button>View more</button>
+          <div className={styles.viewMore}>
+            <button className="bg-black  text-white font-semibold py-2 px-4 border border-black   shadow">
+              View more
+            </button>
           </div>
         </div>
       </div>

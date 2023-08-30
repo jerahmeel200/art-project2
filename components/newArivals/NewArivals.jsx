@@ -44,24 +44,8 @@ function NewArivals() {
               <h5 className="text-1xl font-bold  ">$169.00</h5>
             </div>
 
-            <div className={styles.details}>
-              <div className={styles.size}>
-                <p>SIZE</p>
-                <div>
-                  <button>15X16</button>
-                  <button>15X16</button>
-                  <button>15X16</button>
-                  <button>15X16</button>
-                </div>
-              </div>
-              <div className={styles.material}>
-                <p>MATERIAL</p>
-                <div>
-                  <button>Canvas</button>
-                  <button>Framed</button>
-                  <button>Unframed</button>
-                </div>
-              </div>
+            <div className={styles.btnCont}>
+              <button>Add to cart</button>
             </div>
           </div>
         </div>

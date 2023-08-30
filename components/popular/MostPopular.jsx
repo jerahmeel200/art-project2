@@ -145,7 +145,7 @@ function MostPopular() {
             </div>
           ))}
         </Slider>
-        <div className="flex justify-center items-center pt-10">
+        <div className="flex justify-center items-center pt-20">
           <button className="bg-black  text-white font-semibold py-2 px-4 border border-black   shadow">
             View all
           </button>
