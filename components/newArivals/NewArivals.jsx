@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./NewArivals.module.css";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 function NewArivals() {
   const imgs = [
@@ -23,10 +25,8 @@ function NewArivals() {
             <div className={styles.galleryContainer}>
               {imgs.map((item, i) => (
                 <img
-                  className={sliderData.id === i ? styles.clicked : ""}
+                  className={sliderData[0].id === i ? styles.clicked : ""}
                   key={item.id}
-                  // height="100"
-                  // width="70"
                   src={item.value}
                   alt="thumbnail"
                   onClick={() => handleImageClick(i)}
@@ -34,7 +34,9 @@ function NewArivals() {
               ))}
             </div>
             <div className={styles.displayContainer}>
-              <img src={sliderData[0].value} alt="large" />
+              <Zoom>
+                <img src={sliderData[0].value} alt="large" />
+              </Zoom>
             </div>
           </div>
           <div className={styles.right}>

@@ -20,36 +20,39 @@ function Header() {
     setShowMobileNav(false);
   };
 
-  // Define header style based on the current route
-  const headerStyle = {
-    backgroundColor: router.pathname === "/" ? "gray" : "white",
-    color: router.pathname === "/" ? "gray" : "black",
-  };
+  const headerStyle =
+    router.pathname === "/" ? styles.headerTransparent : styles.headerWhite;
+  const headerTitle =
+    router.pathname === "/" ? styles.headerTitleWhite : styles.headerTitleBlack;
+  // const headerIcon = router.pathname === "/" ? styles.headerIconWhite : styles.headerIconBlack;
+  // const headerLogo = router.pathname === "/" ? styles.headerLogoWhite : styles.headerLogoBlack;
 
-  const headerTitle = {
-    color: router.pathname === "/" ? "white" : "black",
-  };
-  const headerIcon = {
-    color: router.pathname === "/" ? "white" : "black",
-  };
-  const headerLogo = {
-    color: router.pathname === "/" ? "white" : "black",
-  };
+  // Define header style based on the current route
+
+  // const headerTitle = {
+  //   color: router.pathname === "/" ? "white" : "black",
+  // };
+  // const headerIcon = {
+  //   color: router.pathname === "/" ? "white" : "black",
+  // };
+  // const headerLogo = {
+  //   color: router.pathname === "/" ? "white" : "black",
+  // };
   return (
     <>
-      <div className={styles.container} style={headerStyle}>
+      <div className={`${styles.container} ${headerStyle}`}>
         <div className="main">
           <div className={styles.wrapper}>
             <div className={styles.logo}>
-              <h1 style={headerLogo}>LOGO</h1>
+              <h1>LOGO</h1>
             </div>
             <div className={styles.linkList}>
               {navLinks.map((item, index) => (
                 <Link
-                  style={headerTitle}
                   key={item.id}
                   href={item.link}
-                  className={styles.links}
+                  className={`${styles.links} ${headerTitle}`}
+                  // style={headerTitle}
                 >
                   {item.title}
                 </Link>
@@ -57,13 +60,13 @@ function Header() {
             </div>
             <div className={styles.left}>
               <button style={{ background: "none" }}>
-                <Search strokeWidth={2} style={headerIcon} size={30} />
+                <Search strokeWidth={2} size={30} />
               </button>
               <button className={styles.menu} onClick={handleSetTrue}>
-                <Menu style={headerIcon} strokeWidth={2} />
+                <Menu strokeWidth={2} />
               </button>
               <button>
-                <ShoppingCart strokeWidth={2} style={headerIcon} size={30} />
+                <ShoppingCart strokeWidth={2} size={30} />
               </button>
             </div>
           </div>
