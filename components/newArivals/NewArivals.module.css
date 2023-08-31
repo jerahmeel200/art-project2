@@ -109,8 +109,112 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 718px) {
   .container {
     flex-direction: column;
+  }
+}
+
+/* Extra Small Devices (portrait phones) */
+@media (max-width: 575.98px) {
+  /* Styles for extra small devices */
+  .left {
+    justify-content: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .displayContainer img {
+    max-width: 350px;
+    width: 100%; /* Set the desired width */
+    height: 500px; /* Set the desired height */
+    max-height: 500px;
+    /* background-repeat: repeat; */
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .displayContainer img {
+    max-width: 200px;
+    width: 100%; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    max-height: 500px;
+    /* background-repeat: repeat; */
+  }
+  .left {
+    justify-content: center;
+  }
+}
+@media (min-width: 400px) and (max-width: 576px) {
+  .displayContainer img {
+    max-width: 300px;
+    width: 100%; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    max-height: 500px;
+    /* background-repeat: repeat; */
+  }
+  .left {
+    justify-content: center;
+  }
+}
+/* Small Devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Styles for small devices */
+  .left {
+    justify-content: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .displayContainer img {
+    max-width: 550px;
+    width: 100%; /* Set the desired width */
+    height: 500px; /* Set the desired height */
+    max-height: 500px;
+    /* background-repeat: repeat; */
+  }
+}
+
+/* Medium Devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Styles for medium devices */
+  .left {
+    justify-content: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Large Devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Styles for large devices */
+  /* Styles for extra large devices */
+  .left {
+    justify-content: center;
+  }
+
+  .displayContainer img {
+    max-width: 400px;
+    width: 100%; /* Set the desired width */
+    height: 500px; /* Set the desired height */
+    max-height: 500px;
+    /* background-repeat: repeat; */
+  }
+}
+
+/* Extra Large Devices (large desktops) */
+@media (min-width: 1200px) {
+  /* Styles for extra large devices */
+  .left {
+    justify-content: center;
+  }
+
+  .displayContainer img {
+    max-width: 400px;
+    width: 100%; /* Set the desired width */
+    height: 500px; /* Set the desired height */
+    max-height: 500px;
+    /* background-repeat: repeat; */
   }
 }
