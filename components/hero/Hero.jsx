@@ -66,12 +66,14 @@ function Hero() {
                   position: "absolute",
                   top: 0,
                   left: 0,
-                  // maxWidth: "200px",
-                  width: "100%",
                   height: "100%",
+                  width: "100%",
+                  // objectPosition: "center",
                   opacity: index === currentIndex ? 1 : 0,
                   transition: "opacity 3s ease-in-out",
+                  // objectFit: "contain",
                   // objectFit: "cover",
+                  aspectRatio: "auto",
                 }}
               />
             ))}

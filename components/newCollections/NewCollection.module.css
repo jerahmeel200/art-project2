@@ -13,13 +13,16 @@
 .heading h1 {
   font-size: 30px;
 }
-
+/* .items {
+  width: 100%;
+} */
 .items img {
   width: 100%;
   height: 100%;
   max-width: 500px;
   max-height: 300px;
   margin-bottom: 15px;
+  object-fit: cover;
 }
 .items img:hover {
   transform: scale(1.1) !important;

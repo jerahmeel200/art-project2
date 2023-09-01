@@ -171,6 +171,21 @@ function Footer() {
               </div>
             ))}
           </div>
+          <div className={styles.emailUs}>
+            <h3>EMAIL US</h3>
+            <p>
+              Subscribe to get special offers, free giveaways, and
+              once-in-a-lifetime deals
+            </p>
+            <div className={styles.inputContainer}>
+              <Mail color="white" className={styles.mailIcon} />
+              <input
+                type="text"
+                className={styles.inputs}
+                placeholder="enter your email.."
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

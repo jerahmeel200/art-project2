@@ -60,13 +60,13 @@ function Header() {
             </div>
             <div className={styles.left}>
               <button style={{ background: "none" }}>
-                <Search strokeWidth={2} size={30} />
+                <Search strokeWidth={1} size={30} />
               </button>
               <button className={styles.menu} onClick={handleSetTrue}>
-                <Menu strokeWidth={2} />
+                <Menu strokeWidth={1} />
               </button>
               <button>
-                <ShoppingCart strokeWidth={2} size={30} />
+                <ShoppingCart strokeWidth={1} size={30} />
               </button>
             </div>
           </div>
@@ -77,7 +77,7 @@ function Header() {
           {showMobileNav && (
             <div className={styles.navMobile}>
               <button onClick={handleSetFalse}>
-                <X strokeWidth={2} color="black" size={30} />
+                <X strokeWidth={1} color="black" size={30} />
               </button>
               <div className={styles.mobileLinkCont}>
                 {navLinks.map((item, index) => (
