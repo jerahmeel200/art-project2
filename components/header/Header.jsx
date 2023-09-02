@@ -76,12 +76,13 @@ function Header() {
         <div className={styles.mobileContainer}>
           {showMobileNav && (
             <div className={styles.navMobile}>
-              <button onClick={handleSetFalse}>
+              <button className={styles.cancelBtn} onClick={handleSetFalse}>
                 <X strokeWidth={2} color="black" size={30} />
               </button>
               <div className={styles.mobileLinkCont}>
                 {navLinks.map((item, index) => (
                   <Link
+                    onClick={handleSetFalse}
                     key={item.id}
                     href={item.link}
                     className={styles.mobileLinks}

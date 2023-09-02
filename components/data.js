@@ -35,19 +35,19 @@ export const navLinks = [
 
 export const socioIcons = [
   {
-    icon: <Instagram size={35} color="gray" />,
+    icon: <Instagram size={25} color="gray" />,
   },
   {
-    icon: <Twitter size={35} color="gray" />,
+    icon: <Twitter size={25} color="gray" />,
   },
   {
-    icon: <Youtube size={35} color="gray" />,
+    icon: <Youtube size={25} color="gray" />,
   },
   {
-    icon: <Facebook size={35} color="gray" />,
+    icon: <Facebook size={25} color="gray" />,
   },
   {
-    icon: <Linkedin size={35} color="gray" />,
+    icon: <Linkedin size={25} color="gray" />,
   },
 ];
 
