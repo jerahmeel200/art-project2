@@ -138,7 +138,7 @@ function MostPopular() {
           </h1>
         </div>
 
-        <Slider {...settings}>
+        <Slider {...settings} className={styles.sliders}>
           {popular.map((item, index) => (
             <div key={index} className={styles.box}>
               <img src={item.image} alt="product" className={styles.popImage} />

@@ -47,7 +47,7 @@ function NewCollection() {
           </div>
           <div className={styles.cardHeader}>
             {collections.map((item, index) => (
-              <div key={item.index} className={styles.items}>
+              <div key={index} className={styles.items}>
                 <img src={item.image} alt="" />
                 <p>{item.title}</p>
                 <StarRating rating={item.rating} assName={styles.star} />

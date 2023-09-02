@@ -24,7 +24,7 @@ function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setRandomText(getRandomText());
-    }, 5000);
+    }, 4000);
 
     return () => clearInterval(timer);
   }, []);

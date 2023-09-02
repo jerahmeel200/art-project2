@@ -44,9 +44,15 @@
   font-weight: 500;
   word-spacing: 0.5px;
   padding-bottom: 7px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .price {
   padding-top: 7px;
+}
+.viewMore {
+  display: flex;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .cardHeader .items {
