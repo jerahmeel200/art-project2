@@ -73,7 +73,7 @@ function Hero() {
                   transition: "opacity 3s ease-in-out",
                   // objectFit: "contain",
                   // objectFit: "cover",
-                  aspectRatio: "auto",
+                  // aspectRatio: "auto",
                 }}
               />
             ))}

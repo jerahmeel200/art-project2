@@ -1,0 +1,176 @@
+.container {
+  padding-top: 30px;
+  /* background-color: red; */
+  display: flex;
+  width: 100%;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 20px;
+
+  padding-top: 30px;
+  padding-bottom: 50px;
+  gap: 30px;
+}
+
+.left {
+  display: flex;
+  gap: 10px;
+}
+.right {
+  width: 50%;
+  padding: 0 20px;
+}
+.left img {
+  max-width: 500px;
+  width: 100%; /* Set the desired width */
+  height: 500px; /* Set the desired height */
+  max-height: 500px;
+  background-repeat: repeat;
+  object-fit: cover;
+}
+
+.btnCont {
+  border-top: 1px solid lightgrey;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.btnCont button {
+  margin-top: 30px;
+  border: 1px solid black;
+  width: 100%;
+  color: rgb(45, 45, 45);
+  padding: 7px 0;
+}
+.right h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.right p {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 990px) {
+  .container {
+    flex-direction: column;
+  }
+  .right {
+    width: 100%;
+  }
+  .left img {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 718px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Extra Small Devices (portrait phones) */
+@media (max-width: 575.98px) {
+  /* Styles for extra small devices */
+  .left {
+    justify-content: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .left img {
+    max-width: 400px;
+    width: 100%; /* Set the desired width */
+    height: 500px; /* Set the desired height */
+    max-height: 500px;
+    /* background-repeat: repeat; */
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .left img {
+    max-width: 200px;
+    width: 100%; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    max-height: 500px;
+    /* background-repeat: repeat; */
+  }
+  .left {
+    justify-content: center;
+  }
+}
+@media (min-width: 400px) and (max-width: 576px) {
+  .displayContainer img {
+    max-width: 300px;
+    width: 100%; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    max-height: 500px;
+    /* background-repeat: repeat; */
+  }
+  .left {
+    justify-content: center;
+  }
+}
+/* Small Devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Styles for small devices */
+  .left {
+    justify-content: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .displayContainer img {
+    max-width: 550px;
+    width: 100%; /* Set the desired width */
+    height: 500px; /* Set the desired height */
+    max-height: 500px;
+    /* background-repeat: repeat; */
+  }
+}
+
+/* Medium Devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Styles for medium devices */
+  .left {
+    justify-content: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Large Devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Styles for large devices */
+  /* Styles for extra large devices */
+  .left {
+    justify-content: center;
+  }
+
+  .displayContainer img {
+    max-width: 400px;
+    width: 100%; /* Set the desired width */
+    height: 500px; /* Set the desired height */
+    max-height: 500px;
+    /* background-repeat: repeat; */
+  }
+}
+
+/* Extra Large Devices (large desktops) */
+@media (min-width: 1200px) {
+  /* Styles for extra large devices */
+  .left {
+    justify-content: center;
+  }
+
+  .displayContainer img {
+    max-width: 400px;
+    width: 100%; /* Set the desired width */
+    height: 500px; /* Set the desired height */
+    max-height: 500px;
+    /* background-repeat: repeat; */
+  }
+}
