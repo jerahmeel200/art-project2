@@ -40,8 +40,8 @@ function NewCollection() {
         marginBottom: "30px",
       }}
     >
-      <div className="main">
-        <div className={styles.container}>
+      <div className={styles.container}>
+        <div className="main">
           <div className={styles.heading}>
             <h1>New limited Ts collection !</h1>
           </div>
