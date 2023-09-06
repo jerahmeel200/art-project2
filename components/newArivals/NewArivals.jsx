@@ -43,7 +43,7 @@ function NewArivals() {
             <div className={styles.desc}>
               <h4>NEW ARIVAL</h4>
               <h1>Smoke Break Barack Obama & MLK</h1>
-              <h5 className="text-1xl font-bold  ">$169.00</h5>
+              <h5 className={styles.price}>$169.00</h5>
             </div>
 
             <div className={styles.btnCont}>

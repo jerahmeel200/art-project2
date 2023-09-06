@@ -52,13 +52,6 @@ function MostPopular() {
   const popular = [
     {
       id: 1,
-      image: "/images/popImage1.webp",
-      desc: "Freedom Family Tree ( Malcom X, MLK and Harriet Tubman)",
-      rating: 5,
-      price: "$99.9",
-    },
-    {
-      id: 1,
       image: "/images/popImage2.avif",
       desc: "New York Subway",
       rating: 5,
@@ -147,13 +140,13 @@ function MostPopular() {
 
                 <StarRating rating={item.rating} className={styles.star} />
 
-                <p className={styles.price}>{item.price}</p>
+                <p className={styles.price}> from {item.price}</p>
               </div>
             </div>
           ))}
         </Slider>
         <div className="flex justify-center items-center pt-20">
-          <button className="bg-black  text-white font-semibold py-2 px-4 border border-black   shadow">
+          <button className="bg-black  text-white font-thin py-2 px-5 border border-black   shadow">
             View all
           </button>
         </div>

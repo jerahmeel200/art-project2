@@ -56,7 +56,7 @@ function NewCollection() {
             ))}
           </div>
           <div className={styles.viewMore}>
-            <button className="bg-black  text-white font-semibold py-2 px-4 border border-black   shadow">
+            <button className="bg-black  text-white font-thin py-2 px-5 border border-black   shadow">
               View more
             </button>
           </div>

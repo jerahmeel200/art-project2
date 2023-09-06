@@ -59,21 +59,13 @@ function Hero() {
           >
             {images.map((imageUrl, index) => (
               <img
+                className={styles.imageHero}
                 key={index}
                 src={imageUrl}
                 alt={`Image ${index + 1}`}
                 style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  height: "100%",
-                  width: "100%",
-                  // objectPosition: "center",
                   opacity: index === currentIndex ? 1 : 0,
                   transition: "opacity 3s ease-in-out",
-                  // objectFit: "contain",
-                  // objectFit: "cover",
-                  // aspectRatio: "auto",
                 }}
               />
             ))}
@@ -90,45 +82,3 @@ function Hero() {
 }
 
 export default Hero;
-// import React, { useState, useEffect } from "react";
-
-// const Hero = () => {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-//   const images = [
-//     "https://cdn.pixabay.com/photo/2023/06/02/21/24/portrait-8036356_1280.jpg",
-//     "https://cdn.pixabay.com/photo/2015/01/07/15/51/woman-591576_1280.jpg",
-//     "https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg",
-//   ];
-
-//   useEffect(() => {
-//     const timer = setInterval(() => {
-//       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-//     }, 3000);
-
-//     return () => clearInterval(timer);
-//   }, [images.length]);
-
-//   return (
-//     <>
-//       {images.map((imageUrl, index) => (
-//         <img
-//           key={index}
-//           src={imageUrl}
-//           alt={`Image ${index + 1}`}
-//           style={{
-//             position: "absolute",
-//             top: 0,
-//             left: 0,
-//             width: "200px",
-//             height: "200px",
-//             opacity: index === currentIndex ? 1 : 0,
-//             transition: "opacity 3s ease-in-out",
-//             objectFit: "cover",
-//           }}
-//         />
-//       ))}
-//     </>
-//   );
-// };
-
-// export default Hero;

@@ -11,7 +11,8 @@
   margin-bottom: 40px;
 }
 .heading h1 {
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: 400;
 }
 /* .items {
   width: 100%;
@@ -41,14 +42,16 @@
 }
 .items p {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   word-spacing: 0.5px;
   padding-bottom: 7px;
   text-overflow: ellipsis;
   overflow: hidden;
+  color: rgb(56, 55, 55);
 }
 .price {
   padding-top: 7px;
+  font-weight: 300;
 }
 .viewMore {
   display: flex;
