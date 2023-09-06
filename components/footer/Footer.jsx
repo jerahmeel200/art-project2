@@ -178,7 +178,7 @@ function Footer() {
               once-in-a-lifetime deals
             </p>
             <div className={styles.inputContainer}>
-              <Mail color="white" className={styles.mailIcon} />
+              <Mail color="white" className={styles.mailIcon} size={20} />
               <input
                 type="text"
                 className={styles.inputs}
