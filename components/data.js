@@ -11,21 +11,13 @@ export const navLinks = [
     title: "GALLERY SHOP",
     link: "/products",
   },
-  {
-    id: 3,
-    title: "CLOTHING",
-    link: "/clothing",
-  },
+
   {
     id: 4,
     title: "ABOUT",
     link: "/about",
   },
-  {
-    id: 5,
-    title: "REVIEWS",
-    link: "/reviews",
-  },
+
   {
     id: 6,
     title: "CONTACT",

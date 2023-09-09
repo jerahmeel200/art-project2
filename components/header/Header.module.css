@@ -26,13 +26,14 @@
   flex: 6;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .linkList a {
   margin: 0 10px; /* Add margin between icons */
   font-size: 17px;
   cursor: pointer;
-  padding: 0, 20px;
+  padding: 10px, 20px;
   flex-wrap: wrap;
   font-weight: 400;
 }
