@@ -13,6 +13,7 @@
   /* background-color: green; */
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .logo h {
   flex: 1;
@@ -82,6 +83,9 @@
   background-color: white;
   color: black;
   position: relative;
+  border-bottom: 1px solid lightgray;
+  height: 120px;
+  align-items: center;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .mobileLinks {

@@ -1,27 +1,19 @@
 import React from "react";
 import styles from "./about.module.css";
-import { color } from "framer-motion";
 function index() {
   return (
-    <div
-      style={{
-        paddingTop: "70px",
-        // backgroundColor: "red",
-        paddingLeft: "5rem",
-      }}
-      className="main"
-    >
-      <div className={styles.title}>
-        <h1> ABOUT</h1>
+    <div className="main">
+      <div className={styles.about}>
+        <h1>ABOUT</h1>
       </div>
-
       <div className={styles.container}>
         <div className={styles.descCont}>
-          <h1>NGABO ELCESART DESIRE</h1>
+          <h1 className={styles.title}>NGABO ELCESART DESIRE</h1>
           <p class="">&nbsp;</p>
           <p>
             {" "}
             <img
+              style={{ float: "right" }}
               src="/images/headShot.webp"
               alt="head-shot"
               className={styles.image}
@@ -101,7 +93,6 @@ function index() {
         </div>
       </div>
     </div>
-    // </div>
   );
 }
 

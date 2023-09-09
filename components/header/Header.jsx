@@ -24,6 +24,8 @@ function Header() {
     router.pathname === "/" ? styles.headerTransparent : styles.headerWhite;
   const headerTitle =
     router.pathname === "/" ? styles.headerTitleWhite : styles.headerTitleBlack;
+  // router.pathname === "/" ? styles.headerTitleWhite : styles.headerTitleBlack;
+
   // const headerIcon = router.pathname === "/" ? styles.headerIconWhite : styles.headerIconBlack;
   // const headerLogo = router.pathname === "/" ? styles.headerLogoWhite : styles.headerLogoBlack;
 
