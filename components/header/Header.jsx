@@ -21,9 +21,13 @@ function Header() {
   };
 
   const headerStyle =
-    router.pathname === "/" ? styles.headerTransparent : styles.headerWhite;
+    router.pathname === "/" || router.pathname === "/products"
+      ? styles.headerTransparent
+      : styles.headerWhite;
   const headerTitle =
-    router.pathname === "/" ? styles.headerTitleWhite : styles.headerTitleBlack;
+    router.pathname === "/" || router.pathname === "/products"
+      ? styles.headerTitleWhite
+      : styles.headerTitleBlack;
   // router.pathname === "/" ? styles.headerTitleWhite : styles.headerTitleBlack;
 
   // const headerIcon = router.pathname === "/" ? styles.headerIconWhite : styles.headerIconBlack;
