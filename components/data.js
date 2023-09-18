@@ -8,19 +8,19 @@ export const navLinks = [
   },
   {
     id: 2,
-    title: "GALLERY SHOP",
+    title: "MY GALLERY",
     link: "/products",
   },
 
   {
     id: 4,
-    title: "ABOUT",
+    title: "ABOUT ME",
     link: "/about",
   },
 
   {
     id: 6,
-    title: "CONTACT",
+    title: "CONTACT ME",
     link: "/contact",
   },
 ];

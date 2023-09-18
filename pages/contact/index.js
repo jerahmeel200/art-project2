@@ -14,8 +14,7 @@ function index() {
             </div>
             <h1
               // style={{ fontSize: "20px" }}
-              className="lg:w-2/3 mx-auto leading-relaxed mb-5 sm:text-1xl text-[20px] title-font    "
-            >
+              className="lg:w-2/3 mx-auto leading-relaxed mb-5 sm:text-1xl text-[20px] title-font    ">
               GET IN TOUCH
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base mb-5">
@@ -32,8 +31,7 @@ function index() {
                   <div className="relative">
                     <label
                       for="name"
-                      className="leading-7 text-sm text-gray-600"
-                    >
+                      className="leading-7 text-sm text-gray-600">
                       Name
                     </label>
                     <input
@@ -48,8 +46,7 @@ function index() {
                   <div className="relative">
                     <label
                       for="email"
-                      className="leading-7 text-sm text-gray-600"
-                    >
+                      className="leading-7 text-sm text-gray-600">
                       Email
                     </label>
                     <input
@@ -64,20 +61,18 @@ function index() {
                   <div className="relative">
                     <label
                       for="message"
-                      className="leading-7 text-sm text-gray-600"
-                    >
+                      className="leading-7 text-sm text-gray-600">
                       Message
                     </label>
                     <textarea
                       id="message"
                       name="message"
-                      className="w-full   border border-gray-300 focus:border-black h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                    ></textarea>
+                      className="w-full   border border-gray-300 focus:border-black h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                   </div>
                 </div>
                 <div className="p-2 w-full">
                   <button className=" text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600   text-lg">
-                    send
+                    Send
                   </button>
                 </div>
               </div>

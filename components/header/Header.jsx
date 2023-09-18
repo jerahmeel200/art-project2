@@ -20,14 +20,15 @@ function Header() {
     setShowMobileNav(false);
   };
 
-  const headerStyle =
-    router.pathname === "/" || router.pathname === "/products"
-      ? styles.headerTransparent
-      : styles.headerWhite;
-  const headerTitle =
-    router.pathname === "/" || router.pathname === "/products"
-      ? styles.headerTitleWhite
-      : styles.headerTitleBlack;
+  const showTransparent =
+    router.pathname === "/" || router.pathname === "/products";
+
+  const headerStyle = showTransparent
+    ? styles.headerTransparent
+    : styles.headerWhite;
+  const headerTitle = showTransparent
+    ? styles.headerTitleWhite
+    : styles.headerTitleBlack;
   // router.pathname === "/" ? styles.headerTitleWhite : styles.headerTitleBlack;
 
   // const headerIcon = router.pathname === "/" ? styles.headerIconWhite : styles.headerIconBlack;
@@ -50,7 +51,16 @@ function Header() {
         <div className="main">
           <div className={styles.wrapper}>
             <div className={styles.logo}>
-              <h1>LOGO</h1>
+              <Link href={"/"}>
+                <img
+                  style={{ cursor: "pointer" }}
+                  src={
+                    !showTransparent
+                      ? "/images/logo-black.png"
+                      : "/images/logo.png"
+                  }
+                />
+              </Link>
             </div>
             <div className={styles.linkList}>
               {navLinks.map((item, index) => (
@@ -60,19 +70,19 @@ function Header() {
                   className={`${styles.links} ${headerTitle}`}
                   // style={headerTitle}
                 >
-                  {item.title}
+                  {item.title.toLowerCase()}
                 </Link>
               ))}
             </div>
             <div className={styles.left}>
               <button style={{ background: "none" }}>
-                <Search strokeWidth={2} size={30} />
+                <Search strokeWidth={1} size={30} />
               </button>
               <button className={styles.menu} onClick={handleSetTrue}>
-                <Menu strokeWidth={2} />
+                <Menu strokeWidth={1} />
               </button>
               <button>
-                <ShoppingCart strokeWidth={2} size={30} />
+                <ShoppingCart strokeWidth={1} size={30} />
               </button>
             </div>
           </div>
@@ -91,8 +101,7 @@ function Header() {
                     onClick={handleSetFalse}
                     key={item.id}
                     href={item.link}
-                    className={styles.mobileLinks}
-                  >
+                    className={styles.mobileLinks}>
                     {item.title}
                   </Link>
                 ))}

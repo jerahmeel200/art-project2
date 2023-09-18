@@ -9,7 +9,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        amiri: ["Amiri", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

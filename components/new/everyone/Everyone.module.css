@@ -1,0 +1,245 @@
+.about_body {
+  background-color: #008080;
+  padding-top: 7rem;
+}
+@media (max-width: 1500px) {
+  .about_body {
+    min-height: 32rem;
+  }
+}
+@media (max-width: 1201px) {
+  .about_body {
+    padding-top: 6rem;
+  }
+}
+@media (max-width: 900px) {
+  .about_body {
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 600px) {
+  .about_body {
+    padding-top: 4rem;
+  }
+}
+.muta_everyone {
+  height: 872px;
+  padding: 80px 30px;
+  background-color: #f5f7fa;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+
+  position: relative;
+}
+
+.blur {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1260px) {
+  .muta_everyone {
+    height: fit-content;
+  }
+}
+.muta_everyone main {
+  flex: 1;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: calc(1440px - 240px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media (max-width: 1260px) {
+  .muta_everyone main {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+.muta_everyone section {
+  flex: 1;
+  height: 100%;
+  max-width: calc((282px + 282px) + 24px);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media (max-width: 1260px) {
+  .muta_everyone section {
+    height: fit-content;
+  }
+}
+@media (max-width: 900px) {
+  .muta_everyone section {
+    max-width: 100%;
+  }
+}
+.muta_everyone section header {
+  width: 100%;
+  max-width: 486px;
+}
+@media (max-width: 900px) {
+  .muta_everyone section header {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+.muta_everyone section header h1 {
+  font-size: 40px;
+  line-height: 54px;
+  padding-bottom: 30px;
+  font-weight: 900;
+}
+.muta_everyone section header h1 span {
+  color: #008080;
+}
+
+@media only screen and (max-width: 990px) {
+  .muta_everyone section header h1 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+
+.muta_everyone section header p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.muta_everyone section .right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1260px) {
+  .muta_everyone section .right {
+    display: none;
+  }
+}
+.muta_everyone section .columns {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 22px 0;
+}
+@media (max-width: 1260px) {
+  .muta_everyone section .columns {
+    display: none;
+  }
+}
+.muta_everyone section .columns .column {
+  display: flex;
+  flex-direction: column;
+}
+.muta_everyone .smallerScreenView {
+  display: flex;
+  flex-wrap: wrap;
+}
+.muta_everyone .smallerScreenView div {
+  margin: 40px 20px;
+}
+@media (max-width: 900px) {
+  .muta_everyone .smallerScreenView div {
+    margin: 20px;
+  }
+}
+@media (min-width: 1260px) {
+  .muta_everyone .smallerScreenView {
+    display: none;
+  }
+}
+
+.muta_everyone .box {
+  width: 100%;
+  width: 282px;
+  height: 326px;
+  background-color: #fff;
+  text-align: left;
+  padding: 17px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.muta_everyone .box img {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 160px;
+}
+
+.muta_everyone .leftBorder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+.muta_everyone .leftBorder main {
+  position: absolute;
+
+  width: 14px;
+  background-color: #f5f7fa;
+  height: 100%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+@media (max-width: 900px) {
+  .muta_everyone .smallerScreenView {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .muta_everyone .box {
+    background-color: #eaecf3;
+  }
+
+  .muta_everyone .leftBorder main {
+    background-color: #eaecf3;
+  }
+}
+
+.muta_everyone .box div {
+  margin-top: 24px;
+}
+.muta_everyone .box div h4 {
+  color: #008080;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.muta_everyone .box div p {
+  color: #676b74;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+@media (max-width: 900px) {
+  .muta_everyone .box div h4 {
+    text-align: center;
+  }
+  .muta_everyone .box div p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .muta_everyone {
+    padding: 80px 20px;
+    padding-top: 40px;
+  }
+}

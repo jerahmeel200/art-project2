@@ -34,7 +34,7 @@
 }
 
 .clicked {
-  border: 3px solid black;
+  border: 3px solid #008080;
 }
 .borderTop {
   border-bottom: 1px solid lightgray;
@@ -61,17 +61,21 @@
 }
 .desc h4 {
   padding-bottom: 5px;
-  font-size: 15px;
+  font-size: 14px;
+  color: #008080;
+  letter-spacing: 3px;
 }
 .desc h1 {
   padding-bottom: 5px;
   font-size: 25px;
-  font-weight: 350;
+  font-weight: 500;
 }
 .price {
 }
 .desc h5 {
   padding-bottom: 20px;
+  letter-spacing: 2px;
+  color: #272929;
 }
 .desc {
 }
@@ -79,17 +83,61 @@
   border-top: 1px solid gray;
 }
 .btnCont {
+}
+
+.h3 {
   border-top: 1px solid lightgrey;
   margin-top: 10px;
   padding-bottom: 10px;
+  color: #252626;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  padding-top: 30px;
 }
+.materialButtonClicked {
+  width: fit-content;
+  height: 40px;
+  text-align: center;
+  color: #414646 !important;
+  border: 2px solid #1c1d1d;
+  margin-right: 20px;
+  padding: 0 20px;
+  font-weight: 200;
+}
+.materialButton {
+  width: fit-content;
+  height: 40px;
+  text-align: center;
+  color: #4b5151 !important;
+  border: 1px solid #00000020;
+  margin-right: 20px;
+  padding: 0 20px;
+  font-weight: 300;
+}
+
 .btnCont button {
   margin-top: 30px;
-  border: 1px solid black;
+  border: 1px solid #1c1d1d;
   width: 100%;
-  color: rgb(45, 45, 45);
   padding: 12px 0;
-  color: gray;
+
+  background-color: #1c1d1d; /* Default background color */
+
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  border: 1px solid #000;
+  color: #1c1d1d; /* Default background color */
+  background-color: #ffffff; /* Text color */
+}
+
+.btnCont button:hover {
+  background-color: #000; /* New background color on hover */
+  border: 1px solid #000;
+  color: #ffffff; /* Text color */
 }
 
 .star {

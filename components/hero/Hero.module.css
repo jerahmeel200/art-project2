@@ -27,11 +27,11 @@
   object-fit: contain;
 }
 
-.randomTextContainer h2 {
+.randomTextContainer span {
   margin: 0;
   font-size: 24px;
-  font-weight: 600;
   color: white;
+  text-align: center;
 }
 .imageHero {
   position: absolute;

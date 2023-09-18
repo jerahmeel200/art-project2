@@ -107,40 +107,45 @@ function MostPopular() {
         <div className={styles.heading}>
           <h2
             style={{
-              fontSize: "17px",
+              fontSize: "14px",
               letterSpacing: ".2em",
+              letterSpacing: "2px",
               paddingBottom: "10px",
-              fontWeight: "500",
-              color: "gray`",
-            }}
-          >
+              fontWeight: "0",
+              color: "#1c1d1d",
+            }}>
             MOST POPULAR
           </h2>
-          <h1
+          <p
             style={{
-              fontSize: "30px",
-              letterSpacing: "0.0em",
-              fontWeight: "400",
-              marginBottom: "20px",
-              paddingBottom: "10px",
               fontSize: "25px",
-              borderBottom: "3px solid black",
-            }}
-          >
+              marginTop: "10px",
+              marginBottom: "20px",
+              paddingBottom: "20px",
+              fontSize: "25px",
+              borderBottom: "2px solid #1c1d1d",
+              color: "#1c1d1d",
+            }}>
             Best Sellers
-          </h1>
+          </p>
         </div>
 
         <Slider {...settings} className={styles.sliders}>
           {popular.map((item, index) => (
-            <div key={index} className={styles.box}>
-              <img src={item.image} alt="product" className={styles.popImage} />
-              <div className={styles.details}>
-                <h4 className={styles.desc}>{item.desc}</h4>
+            <div key={index} className={styles.boxWrapper}>
+              <div className={styles.box}>
+                <img
+                  src={item.image}
+                  alt="product"
+                  className={styles.popImage}
+                />
+                <div className={styles.details}>
+                  <h4 className={styles.desc}>{item.desc}</h4>
 
-                <StarRating rating={item.rating} className={styles.star} />
+                  <StarRating rating={item.rating} className={styles.star} />
 
-                <p className={styles.price}> from {item.price}</p>
+                  <p className={styles.price}> from {item.price}</p>
+                </div>
               </div>
             </div>
           ))}

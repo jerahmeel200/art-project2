@@ -1,6 +1,9 @@
 // Hero.js
 
 import React, { useState, useEffect } from "react";
+
+import { Fade, Slide } from "react-awesome-reveal";
+
 import styles from "./Hero.module.css";
 import Animations from "./Animations.module.css";
 
@@ -8,35 +11,29 @@ import Animations from "./Animations.module.css";
 
 function Hero() {
   const randomTexts = [
-    "Use client",
-    "Get started now",
-    "Boost your productivity",
-    "Discover new possibilities",
+    "Elegance in Every Brushstroke",
+    "A Palette of Inspiration",
+    "Journey Through Artistic Expression",
+    "Elegance in Every Brushstroke",
+    "Discover Your Artistic Muse",
+    "Journey Through Artistic Expression",
   ];
-
-  const [randomText, setRandomText] = useState(getRandomText());
-
-  function getRandomText() {
-    const randomIndex = Math.floor(Math.random() * randomTexts.length);
-    return randomTexts[randomIndex];
-  }
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setRandomText(getRandomText());
-    }, 4000);
-
-    return () => clearInterval(timer);
-  }, []);
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const [isZoomIn, setIsZoomIn] = useState(true); // State to toggle zoom-in and zoom-out animations
   const images = [
-    "/images/img-1.png",
-    "/images/img-2.jpg",
-    "/images/img-3.png",
+    // "/images/img-1.png",
+    // "/images/img-2.jpg",
+    // "/images/img-3.png",
+    // "/images/img-4.png",
+
+    "/images/art-1.jpg",
     "/images/img-4.png",
+    "/images/art-2.jpg",
+    "/images/img-3.png",
+    "/images/art-3.jpg",
+    "/images/img-2.jpg",
   ];
 
   useEffect(() => {
@@ -55,8 +52,7 @@ function Hero() {
           <div
             className={`${styles.imageContainer} ${
               isZoomIn ? Animations["zoom-in"] : Animations["zoom-out"]
-            }`}
-          >
+            }`}>
             {images.map((imageUrl, index) => (
               <img
                 className={styles.imageHero}
@@ -71,7 +67,20 @@ function Hero() {
             ))}
 
             <div className={styles.randomTextContainer}>
-              <h2>{randomText}</h2>
+              {randomTexts.map((x, i) => {
+                if (currentIndex !== i) return null;
+
+                return (
+                  <Fade
+                    key={x}
+                    delay={1e3}
+                    cascade
+                    damping={1e-1}
+                    style={{ color: "#fff" }}>
+                    {x}
+                  </Fade>
+                );
+              })}
             </div>
           </div>
         </div>
