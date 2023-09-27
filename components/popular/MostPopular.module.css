@@ -10,7 +10,6 @@
 .box {
   width: 259px;
   height: 259px;
-  /* padding-bottom: 10px; */
 }
 
 .popImage {
@@ -100,6 +99,23 @@ button.slick-arrow.slick-next:before {
   margin-bottom: 10px;
 } */
 
-@media screen and (max-width: 768px) {
-  /* Mobile styles */
+@media screen and (max-width: 767px) {
+  .box {
+    margin: 0 20px;
+    /* text-align: center; */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Adjust styles for medium-sized screens */
+  .box {
+    width: 200px;
+    height: 200px;
+    margin: 0 30px;
+  }
+}
+
+/* Desktop view (1024px and above) */
+@media (min-width: 1024px) {
+  /* Adjust styles for larger screens */
 }

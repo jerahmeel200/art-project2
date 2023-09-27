@@ -66,6 +66,7 @@
 @media (max-width: 480px) {
   .cardHeader .items {
     flex-basis: calc(100% - 20px); /* For 1 column on mobile screens */
+    margin: 0 20px;
   }
 }
 

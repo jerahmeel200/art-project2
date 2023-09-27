@@ -28,7 +28,7 @@ function MostPopular() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -36,7 +36,7 @@ function MostPopular() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -113,7 +113,8 @@ function MostPopular() {
               paddingBottom: "10px",
               fontWeight: "0",
               color: "#1c1d1d",
-            }}>
+            }}
+          >
             MOST POPULAR
           </h2>
           <p
@@ -125,7 +126,8 @@ function MostPopular() {
               fontSize: "25px",
               borderBottom: "2px solid #1c1d1d",
               color: "#1c1d1d",
-            }}>
+            }}
+          >
             Best Sellers
           </p>
         </div>
