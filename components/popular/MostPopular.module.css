@@ -1,15 +1,18 @@
 .carousel {
-  padding: 5rem 2rem;
+  padding: 5rem 3rem;
+  /* background-color: red; */
   /* border-top: 1px solid gray; */
 
   /* background-color: gray; */
 }
 
-.boxWrapper {
-}
 .box {
-  width: 259px;
+  width: 100% !important;
+  max-width: 250px !important;
+
   height: 259px;
+  /* background-color: red; */
+  /* gap: 10px; */
 }
 
 .popImage {
@@ -99,23 +102,24 @@ button.slick-arrow.slick-next:before {
   margin-bottom: 10px;
 } */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 300px) {
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 600px) {
   .box {
-    margin: 0 20px;
-    /* text-align: center; */
-  }
-  .details {
-    padding-top: 10px;
+    width: 100% !important;
+    max-width: 500px !important;
+
+    height: 259px;
+    background-color: red;
+    object-fit: contain;
+    /* gap: 10px; */
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Adjust styles for medium-sized screens */
-  .box {
-    width: 200px;
-    height: 200px;
-    margin: 0 30px;
-  }
 }
 
 /* Desktop view (1024px and above) */

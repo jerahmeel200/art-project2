@@ -47,6 +47,7 @@
   margin-bottom: 20px;
 }
 .displayContainer img {
+  display: flex;
   max-width: 500px;
   width: 100%; /* Set the desired width */
   height: 500px; /* Set the desired height */
@@ -158,9 +159,9 @@
     padding-bottom: 10px;
     font-size: 20px;
   }
-  .galleryContainer img {
+  /* .galleryContainer img {
     flex-direction: row-reverse;
-  }
+  } */
 }
 
 @media only screen and (max-width: 718px) {
@@ -189,8 +190,8 @@
 
 @media (min-width: 300px) and (max-width: 400px) {
   .displayContainer img {
-    max-width: 200px;
-    width: 100%; /* Set the desired width */
+    width: 350px;
+
     height: 400px; /* Set the desired height */
     max-height: 500px;
     /* background-repeat: repeat; */
@@ -201,8 +202,7 @@
 }
 @media (min-width: 400px) and (max-width: 576px) {
   .displayContainer img {
-    max-width: 300px;
-    width: 100%; /* Set the desired width */
+    width: 380px;
     height: 400px; /* Set the desired height */
     max-height: 500px;
     /* background-repeat: repeat; */
@@ -211,6 +211,36 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .left {
+    flex-direction: column;
+  }
+  .displayContainer img {
+    /* width: 100%; */
+    max-width: 450px;
+
+    height: 400px; /* Set the desired height */
+    max-height: 500px;
+    margin: auto;
+  }
+
+  .galleryContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  .galleryContainer img {
+    max-width: 100px;
+    /* max-height: 100px; */
+  }
+
+  .left {
+    justify-content: center;
+  }
+}
+
 /* Small Devices (landscape phones) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* Styles for small devices */
@@ -221,7 +251,7 @@
     flex-direction: column;
   }
   .displayContainer img {
-    max-width: 550px;
+    max-width: 450px;
     width: 100%; /* Set the desired width */
     height: 500px; /* Set the desired height */
     max-height: 500px;

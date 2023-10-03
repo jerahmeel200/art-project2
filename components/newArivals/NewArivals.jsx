@@ -8,8 +8,8 @@ const materials = ["Canvas", "Framed", "Unframed"];
 function NewArivals() {
   const imgs = [
     { id: 0, value: "/images/img-1.png" },
-    { id: 1, value: "/images/img-2.jpg" },
-    { id: 2, value: "/images/img-3.png" },
+    { id: 1, value: "/images/img-3.png" },
+    { id: 2, value: "/images/img-5.png" },
   ];
   const [clicked, setclicked] = useState(null);
   const [sliderData, setSliderData] = useState([imgs[0]]);
@@ -63,7 +63,8 @@ function NewArivals() {
                           ? styles.materialButtonClicked
                           : styles.materialButton
                       }
-                      key={m}>
+                      key={m}
+                    >
                       {m}
                     </button>
                   );
