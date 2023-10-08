@@ -2,6 +2,15 @@
   background-color: #008080;
   padding-top: 7rem;
 }
+
+.logoImage {
+  width: 200px;
+}
+
+.logoImageHeader {
+  display: flex;
+  flex-direction: column;
+}
 @media (max-width: 1500px) {
   .about_body {
     min-height: 32rem;
@@ -18,6 +27,17 @@
   }
 }
 @media (max-width: 600px) {
+  .logoImage {
+    width: 170px;
+    margin: auto;
+  }
+
+  .logoImageHeader {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
   .about_body {
     padding-top: 4rem;
   }
@@ -144,17 +164,7 @@
   flex-wrap: wrap;
 }
 .muta_everyone .smallerScreenView div {
-  margin: 40px 20px;
-}
-@media (max-width: 900px) {
-  .muta_everyone .smallerScreenView div {
-    margin: 20px;
-  }
-}
-@media (min-width: 1260px) {
-  .muta_everyone .smallerScreenView {
-    display: none;
-  }
+  margin: 20px;
 }
 
 .muta_everyone .box {
@@ -175,6 +185,32 @@
   margin: 0 !important;
   padding: 0 !important;
   height: 160px;
+}
+
+@media (max-width: 900px) {
+  .muta_everyone .smallerScreenView div {
+    margin: 10px 0;
+  }
+}
+@media (min-width: 1260px) {
+  .muta_everyone .smallerScreenView {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .muta_everyone .box {
+    width: 100%;
+    height: 350px;
+    margin: 0;
+  }
+
+  .muta_everyone .box img {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 180px;
+  }
 }
 
 .muta_everyone .leftBorder {

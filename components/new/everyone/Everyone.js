@@ -69,16 +69,19 @@ const MutaEveryone = () => {
       <div className={styles.muta_everyone}>
         <main>
           <section>
-            <header>
+            <header className={styles.logoImageHeader}>
               <h1>
-                <img src="/images/logo-black.png" />
+                <img
+                  src="/images/logo/logo-black-small.png"
+                  className={styles.logoImage}
+                />
               </h1>
 
               <p>
-                Welcome to the captivating world of Pablo, where artistry knows
-                no bounds and creativity flows like a river. Explore the
-                visionary works of Pablo as they unveil a symphony of colors and
-                emotions on the canvas of imagination...
+                Welcome to the captivating world of Elo Art, where artistry
+                knows no bounds and creativity flows like a river. Explore the
+                visionary works of Elo Art as they unveil a symphony of colors
+                and emotions on the canvas of imagination...
               </p>
             </header>
 

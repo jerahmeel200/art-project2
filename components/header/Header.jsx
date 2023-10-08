@@ -7,6 +7,7 @@ import { Search, ShoppingCart, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/router"; // Import the useRouter hook
 import { navLinks, socioIcons } from "../data";
+import MobileDrawer from "./MobileDrawer";
 
 function Header() {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -29,22 +30,7 @@ function Header() {
   const headerTitle = showTransparent
     ? styles.headerTitleWhite
     : styles.headerTitleBlack;
-  // router.pathname === "/" ? styles.headerTitleWhite : styles.headerTitleBlack;
 
-  // const headerIcon = router.pathname === "/" ? styles.headerIconWhite : styles.headerIconBlack;
-  // const headerLogo = router.pathname === "/" ? styles.headerLogoWhite : styles.headerLogoBlack;
-
-  // Define header style based on the current route
-
-  // const headerTitle = {
-  //   color: router.pathname === "/" ? "white" : "black",
-  // };
-  // const headerIcon = {
-  //   color: router.pathname === "/" ? "white" : "black",
-  // };
-  // const headerLogo = {
-  //   color: router.pathname === "/" ? "white" : "black",
-  // };
   return (
     <>
       <div className={`${styles.container} ${headerStyle}`}>
@@ -56,8 +42,8 @@ function Header() {
                   style={{ cursor: "pointer" }}
                   src={
                     !showTransparent
-                      ? "/images/logo-black.png"
-                      : "/images/logo.png"
+                      ? "/images/logo/logo-black-small.png"
+                      : "/images/logo/logo-white-small.png"
                   }
                 />
               </Link>
@@ -78,12 +64,11 @@ function Header() {
               <button style={{ background: "none" }}>
                 <Search strokeWidth={1} size={30} />
               </button>
-              <button className={styles.menu} onClick={handleSetTrue}>
-                <Menu strokeWidth={1} />
-              </button>
               <button>
                 <ShoppingCart strokeWidth={1} size={30} />
               </button>
+
+              <MobileDrawer showTransparent={showTransparent} />
             </div>
           </div>
         </div>

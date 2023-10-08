@@ -1,5 +1,5 @@
 .container {
-  padding: 20px;
+  padding: 0 20px;
 
   box-sizing: border-box;
 
@@ -15,6 +15,11 @@
   justify-content: space-between;
   margin-top: 20px;
 }
+.logo {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .logo h {
   flex: 1;
 }
@@ -23,8 +28,8 @@
   font-weight: 500;
 }
 .logo img {
-  width: 230px;
-  height: 50px;
+  width: 150px;
+  height: 80px;
   object-fit: contain;
 }
 .linkList {
@@ -106,6 +111,10 @@
 @media (min-width: 400px) and (max-width: 576px) {
 }
 @media screen and (max-width: 770px) {
+  .wrapper {
+    margin-top: 0px;
+  }
+
   .mobileContainer {
     display: block;
     transition: width 1.3s ease-in-out;
@@ -178,5 +187,8 @@
 }
 
 /* Extra Large Devices (large desktops) */
-@media (min-width: 1200px) {
+@media (max-width: 700px) {
+  .headerWhite {
+    height: 90px;
+  }
 }

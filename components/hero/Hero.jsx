@@ -23,11 +23,6 @@ function Hero() {
 
   const [isZoomIn, setIsZoomIn] = useState(true); // State to toggle zoom-in and zoom-out animations
   const images = [
-    // "/images/img-1.png",
-    // "/images/img-2.jpg",
-    // "/images/img-3.png",
-    // "/images/img-4.png",
-
     "/images/art-1.jpg",
     "/images/img-4.png",
     "/images/art-2.jpg",

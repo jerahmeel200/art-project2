@@ -8,13 +8,16 @@ function index() {
     <>
       <div className="main">
         <div className={styles.about}>
-          <br />
-          <br />
           <h1>ABOUT ME</h1>
         </div>
         <div className={styles.container}>
           <div className={styles.descCont}>
-            <h1 className={styles.title}>PABLO THE CREATOR</h1>
+            <div className="socials">
+              <img src="/images/instagram.png" />
+              <img src="/images/facebook.png" />
+              <img src="/images/twitter.png" />
+            </div>{" "}
+            <h1 className={styles.title}>Elo Art</h1>
             <p class="">&nbsp;</p>
             <div>
               {" "}
@@ -29,7 +32,6 @@ function index() {
               To Describe The Upcoming Artist.
               {/* </Fade> */}
             </div>
-
             {/* <div className={styles.secondP}> */}
             <p style={{ paddingTop: "20px" }}>
               Ngabo D.Cesar Also Known As ElCesart Is A 27 years old Visual
@@ -40,7 +42,6 @@ function index() {
               Of Bold Colours, Textures And Prints. Uplifted And Inspired By
               Black Culture His Work Brings Together
             </p>
-
             <p style={{ paddingTop: "20px" }}>
               Those Who Articulate A Healthy Relationship With Life. His Work
               Features Characters From Music Artists And Film Stars To Raw
@@ -107,6 +108,25 @@ function index() {
       <br />
       <br />
       <MutaEveryone />
+
+      <style jsx>{`
+        .socials {
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          margin-top: 20px;
+        }
+        .socials img {
+          width: 50px;
+          cursor: pointer;
+        }
+
+        @media screen and (max-width: 770px) {
+          .socials {
+            margin-top: 0px;
+          }
+        }
+      `}</style>
     </>
   );
 }
